@@ -26,7 +26,7 @@ export default function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         isScrolled ? "bg-white/95 backdrop-blur-md shadow-lg" : "bg-transparent"
-      } bg-[#f5f5f0]`}
+      } bg-white`}
     >
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
@@ -39,9 +39,7 @@ export default function Header() {
             <Image
               src={logo}
               alt="Teresol Logo"
-              width={100}
-              height={100}
-              className="object-contain"
+              className="object-contain w-auto h-10"
             />
             </Link>
 
@@ -49,21 +47,21 @@ export default function Header() {
 
           <div className="hidden lg:flex items-center space-x-6">
             <Link
-              href="#home"
-              className="text-gray-700 hover:text-blue-600 hover:scale-110 transition-all duration-300 font-medium whitespace-nowrap transform"
+              href="/"
+              className="text-grey-700 hover:text-blue-600 hover:scale-110 transition-all duration-300 font-medium whitespace-nowrap transform"
             >
               Home
             </Link>
             <Link
               href="#about"
-              className="text-gray-700 hover:text-blue-600 hover:scale-110 transition-all duration-300 font-medium whitespace-nowrap transform"
+              className="text-grey-700 hover:text-blue-600 hover:scale-110 transition-all duration-300 font-medium whitespace-nowrap transform"
             >
               About Us
             </Link>
 
             <div className="relative group">
               <button
-                className="text-gray-700 hover:text-blue-600 hover:scale-110 transition-all duration-300 font-medium whitespace-nowrap flex items-center transform"
+                className="text-grey-700 hover:text-blue-600 hover:scale-110 transition-all duration-300 font-medium whitespace-nowrap flex items-center transform"
                 onClick={() => handleDropdownToggle("solutions")}
               >
                 Solutions
@@ -78,19 +76,19 @@ export default function Header() {
               >
                 <div className="p-4 space-y-2">
                   <Link
-                    href="#iot-solutions"
+                    href="#"
                     className="block text-gray-600 hover:text-blue-600 hover:bg-blue-50 hover:scale-105 transition-all duration-300 py-2 px-3 rounded-lg transform"
                   >
                     IoT Solutions
                   </Link>
                   <Link
-                    href="#automation"
+                    href="#"
                     className="block text-gray-600 hover:text-blue-600 hover:bg-blue-50 hover:scale-105 transition-all duration-300 py-2 px-3 rounded-lg transform"
                   >
                     Industrial Automation
                   </Link>
                   <Link
-                    href="#smart-systems"
+                    href="#"
                     className="block text-gray-600 hover:text-blue-600 hover:bg-blue-50 hover:scale-105 transition-all duration-300 py-2 px-3 rounded-lg transform"
                   >
                     Smart Systems
@@ -101,7 +99,7 @@ export default function Header() {
 
             <div className="relative group">
               <button
-                className="text-gray-700 hover:text-blue-600 hover:scale-110 transition-all duration-300 font-medium whitespace-nowrap flex items-center transform"
+                className="text-grey-700 hover:text-blue-600 hover:scale-110 transition-all duration-300 font-medium whitespace-nowrap flex items-center transform"
                 onClick={() => handleDropdownToggle("products")}
               >
                 Products
@@ -116,19 +114,19 @@ export default function Header() {
               >
                 <div className="p-4 space-y-2">
                   <Link
-                    href="#hardware"
+                    href="#"
                     className="block text-gray-600 hover:text-blue-600 hover:bg-blue-50 hover:scale-105 transition-all duration-300 py-2 px-3 rounded-lg transform"
                   >
                     Hardware Devices
                   </Link>
                   <Link
-                    href="#software"
+                    href="#"
                     className="block text-gray-600 hover:text-blue-600 hover:bg-blue-50 hover:scale-105 transition-all duration-300 py-2 px-3 rounded-lg transform"
                   >
                     Software Platforms
                   </Link>
                   <Link
-                    href="#embedded"
+                    href="#"
                     className="block text-gray-600 hover:text-blue-600 hover:bg-blue-50 hover:scale-105 transition-all duration-300 py-2 px-3 rounded-lg transform"
                   >
                     Embedded Systems
@@ -138,15 +136,15 @@ export default function Header() {
             </div>
 
             <Link
-              href="/services"
-              className="text-gray-700 hover:text-blue-600 hover:scale-110 transition-all duration-300 font-medium whitespace-nowrap transform"
+              href="#"
+              className="text-grey-700 hover:text-blue-600 hover:scale-110 transition-all duration-300 font-medium whitespace-nowrap transform"
             >
               Services
             </Link>
 
             <div className="relative group">
               <button
-                className="text-gray-700 hover:text-blue-600 hover:scale-110 transition-all duration-300 font-medium whitespace-nowrap flex items-center transform"
+                className="text-grey-700 hover:text-blue-600 hover:scale-110 transition-all duration-300 font-medium whitespace-nowrap flex items-center transform"
                 onClick={() => handleDropdownToggle("resources")}
               >
                 Resources
@@ -161,13 +159,13 @@ export default function Header() {
               >
                 <div className="p-4 space-y-2">
                   <Link
-                    href="#documentation"
+                    href="#"
                     className="block text-gray-600 hover:text-blue-600 hover:bg-blue-50 hover:scale-105 transition-all duration-300 py-2 px-3 rounded-lg transform"
                   >
                     Documentation
                   </Link>
                   <Link
-                    href="#case-studies"
+                    href="#"
                     className="block text-gray-600 hover:text-blue-600 hover:bg-blue-50 hover:scale-105 transition-all duration-300 py-2 px-3 rounded-lg transform"
                   >
                     Case Studies
@@ -183,16 +181,16 @@ export default function Header() {
             </div>
 
             <Link
-              href="#blog"
-              className="text-gray-700 hover:text-blue-600 hover:scale-110 transition-all duration-300 font-medium whitespace-nowrap transform"
+              href="#"
+              className="text-gre-700 hover:text-blue-600 hover:scale-110 transition-all duration-300 font-medium whitespace-nowrap transform"
             >
               Blog
             </Link>
             <Link
-              href="#contact"
-              className="text-gray-700 hover:text-blue-600 hover:scale-110 transition-all duration-300 font-medium whitespace-nowrap transform"
+              href="#"
+              className="text-grey-700 hover:text-blue-600 hover:scale-110 transition-all duration-300 font-medium whitespace-nowrap transform"
             >
-              Contact
+              Contact Us
             </Link>
 
             <button className="bg-black text-white px-6 py-2 rounded-full hover:bg-blue-600 hover:scale-110 hover:shadow-xl transition-all duration-300 font-medium whitespace-nowrap transform active:scale-95">
@@ -240,7 +238,7 @@ export default function Header() {
                 Products
               </Link>
               <Link
-                href="/services"
+                href="#services"
                 className="text-gray-700 hover:text-black transition-colors duration-300"
               >
                 Services

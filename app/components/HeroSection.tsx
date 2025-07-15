@@ -32,7 +32,7 @@ export default function HeroSection() {
         loop
         playsInline
       >
-        <source src="/assets/video/hardware.mp4" type="video/mp4" />
+        <source src="/assets/videos/hardware.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 

@@ -6,7 +6,7 @@ import { useState, useEffect, useRef } from 'react';
 export default function StatsSection() {
   const [isVisible, setIsVisible] = useState(false);
   const [counters, setCounters] = useState([0, 0, 0, 0]);
-  const sectionRef = useRef<HTMLSection>(null);
+const sectionRef = useRef<HTMLElement | null>(null);
 
   const stats = [
     { number: 500, label: 'Projects Delivered', suffix: '+', icon: 'ri-trophy-line' },
