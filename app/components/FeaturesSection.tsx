@@ -63,7 +63,7 @@ export default function FeaturesSection() {
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6 hover:scale-105 transition-transform duration-300">
             Why Choose <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Teresol</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-800 max-w-3xl mx-auto">
             Experience the perfect blend of innovation and reliability in every project
           </p>
         </div>

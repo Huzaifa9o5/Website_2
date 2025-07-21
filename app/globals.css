@@ -6,3 +6,51 @@
 html {
   scroll-behavior: smooth;
 }
+
+@keyframes border-glow {
+  0% {
+    box-shadow: 0 0 0px #3b82f6;
+  }
+  50% {
+    box-shadow: 0 0 15px #3b82f6, 0 0 30px #60a5fa;
+  }
+  100% {
+    box-shadow: 0 0 0px #3b82f6;
+  }
+}
+
+.animate-border-glow {
+  animation: border-glow 1.5s ease-in-out infinite;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease-out forwards;
+}
+
+@keyframes marquee-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-wrapper {
+  animation: marquee-left 100s linear infinite;
+}
+
+.marquee-paused:hover {
+  animation-play-state: paused;
+}
