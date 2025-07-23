@@ -145,11 +145,11 @@ export default function Footer() {
       </div>
 
       <div className="bg-gradient-to-r from-blue-900 to-purple-900 py-4">
-        <div className="container mx-auto px-6 text-center">
+        {/* <div className="container mx-auto px-6 text-center">
           <p className="text-blue-100 text-sm">
             Engineered with precision • Built for the future • Powered by innovation
           </p>
-        </div>
+        </div> */}
       </div>
     </footer>
   );

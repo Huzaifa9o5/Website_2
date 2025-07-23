@@ -54,3 +54,6 @@ html {
 .marquee-paused:hover {
   animation-play-state: paused;
 }
+body {
+  overflow-x: hidden;
+}
