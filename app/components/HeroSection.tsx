@@ -30,7 +30,7 @@ export default function HeroSection() {
         autoPlay
         muted
         loop
-        playsInline
+        playsInline 
       >
         <source src="/assets/videos/video8.mp4" type="video/mp4" />
         Your browser does not support the video tag.
