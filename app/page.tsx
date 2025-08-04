@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import HeroSection from "./components/HeroSection";
-import ServicesSection from "./components/ServicesSection";
+import ServiceSection from "./components/ServiceSection";
 import AboutSection from "./components/AboutSection";
 import StatsSection from "./components/StatsSection";
 import FeaturesSection from "./components/FeaturesSection";
@@ -12,6 +12,8 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ClientsSection from "./components/ClientsSection";
 import CertificationSection from "./components/CertificationSection";
+import BlogsSection from "./components/BlogsSection"
+import QuoteSection from "./components/QuoteSection";
 
 export default function Home() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -29,16 +31,14 @@ export default function Home() {
       <Header />
       <main>
         <HeroSection />
-        <ServicesSection />
-        {/* <AboutSection /> */}
+        <ServiceSection />
         <MapSection />
-        <ClientsSection />
         <CertificationSection />
-        {/* <StatsSection /> */}
-        <FeaturesSection />
-        {/* <ContactSection /> */}
-      </main>
+        <ClientsSection />
+        <QuoteSection/>
       <Footer />
+      </main>
+      
     </div>
   );
 }

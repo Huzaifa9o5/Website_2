@@ -1,16 +1,12 @@
-"use client";
 
+"use client";
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 export default function HeroSection() {
   const [currentText, setCurrentText] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
-
-  const heroTexts = [
-    "Hardware Excellence",
-    "Software Innovation",
-    "Engineering Solutions",
-  ];
+  const heroTexts = ["Hardware Excellence", "Software Innovation", "Engineering Solutions"];
 
   useEffect(() => {
     setIsVisible(true);
@@ -21,23 +17,23 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section
-      id="home"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
-    >
-      <video
-        className="absolute inset-0 w-full h-full object-cover"
-        autoPlay
-        muted
-        loop
-        playsInline 
-      >
-        <source src="/assets/videos/video8.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Video Background - Now with optimized poster */}
+      <div className="absolute inset-0 w-full h-full z-[-10]">
+        <video
+          className="w-full h-full object-cover"
+          autoPlay
+          muted
+          loop
+          playsInline
+          poster="/assets/images/video-poster.webp" // Added lightweight poster
+        >
+          <source src="/assets/videos/video8.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-black/40" />
+      </div>
 
-      <div className="absolute inset-0 bg-black/40"></div>
-
+      {/* Foreground Content */}
       <div className="relative z-10 text-center px-6 max-w-6xl mx-auto pt-28">
         <div
           className={`transform transition-all duration-1000 ${
@@ -47,7 +43,7 @@ export default function HeroSection() {
           <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight">
             Pioneering
             <span className="block">
-              <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-[#0f68f7] to-[#e80219] bg-clip-text text-transparent">
                 {heroTexts[currentText]}
               </span>
             </span>
@@ -59,11 +55,11 @@ export default function HeroSection() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <button className="bg-white text-black px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 whitespace-nowrap">
+            {/* <button className="bg-white text-black px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 whitespace-nowrap">
               Explore Our Solutions
-            </button>
+            </button> */}
             <button className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-black transition-all duration-300 transform hover:scale-105 whitespace-nowrap">
-              Watch Demo
+              Explore Our Offerings{" "}
             </button>
           </div>
         </div>
@@ -94,7 +90,7 @@ export default function HeroSection() {
               key={index}
               className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/20 transition-all duration-300 transform hover:scale-105"
             >
-              <div className="w-12 h-12 bg-gradient-to-br from-blue-400 to-purple-400 rounded-lg flex items-center justify-center mb-4 mx-auto">
+              <div className="w-12 h-12 bg-gradient-to-r from-[#25237b] to-[#8b0303] rounded-lg flex items-center justify-center mb-4 mx-auto">
                 <i className={`${item.icon} text-white text-xl`}></i>
               </div>
               <h3 className="text-xl font-semibold text-white mb-2">
@@ -106,11 +102,12 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      {/* Scroll Indicator */}
+      {/* <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce z-10">
         <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center">
           <div className="w-1 h-3 bg-white rounded-full mt-2 animate-pulse"></div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }

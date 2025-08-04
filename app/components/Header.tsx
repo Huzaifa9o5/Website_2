@@ -32,17 +32,15 @@ export default function Header() {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <Link href="/" className="flex items-center space-x-2">
-
-            {/* <div className="w-8 h-8 bg-gradient-to-br from-gray-800 to-black rounded-lg flex items-center justify-center">
+              {/* <div className="w-8 h-8 bg-gradient-to-br from-gray-800 to-black rounded-lg flex items-center justify-center">
               <i className="ri-cpu-line text-white text-lg"></i>
             </div> */}
-            <Image
-              src={logo}
-              alt="Teresol Logo"
-              className="object-contain w-auto h-10"
-            />
+              <Image
+                src={logo}
+                alt="Teresol Logo"
+                className="object-contain w-auto h-10"
+              />
             </Link>
-
           </div>
 
           <div className="hidden lg:flex items-center space-x-6">
@@ -65,16 +63,16 @@ export default function Header() {
                 onClick={() => handleDropdownToggle("solutions")}
               >
                 Solutions
-                <i className="ri-arrow-down-s-line ml-1 transition-transform duration-300 group-hover:rotate-180"></i>
+                {/* <i className="ri-arrow-down-s-line ml-1 transition-transform duration-300 group-hover:rotate-180"></i> */}
               </button>
-              <div
+              {/* <div
                 className={`absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-xl border transition-all duration-300 transform ${
                   activeDropdown === "solutions"
                     ? "opacity-100 visible scale-100"
                     : "opacity-0 invisible scale-95"
                 }`}
-              >
-                <div className="p-4 space-y-2">
+              > */}
+                {/* <div className="p-4 space-y-2">
                   <Link
                     href="#"
                     className="block text-gray-600 hover:text-blue-600 hover:bg-blue-50 hover:scale-105 transition-all duration-300 py-2 px-3 rounded-lg transform"
@@ -93,8 +91,8 @@ export default function Header() {
                   >
                     Smart Systems
                   </Link>
-                </div>
-              </div>
+                </div> */}
+              {/* </div> */}
             </div>
 
             <div className="relative group">
@@ -190,7 +188,7 @@ export default function Header() {
               href="#"
               className="text-grey-700 hover:text-blue-600 hover:scale-110 transition-all duration-300 font-medium whitespace-nowrap transform"
             >
-              Contact Us
+              Careers{" "}
             </Link>
 
             <button className="bg-black text-white px-6 py-2 rounded-full hover:bg-blue-600 hover:scale-110 hover:shadow-xl transition-all duration-300 font-medium whitespace-nowrap transform active:scale-95">
